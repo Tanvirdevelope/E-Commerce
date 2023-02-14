@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making tanvir express">
+    <title>Ecommerce Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- navbar start here -->
+   <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+   <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-arround">
+        <li class="nav__list">
+            <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+            <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+            <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <li class="nav__list">
+            <a href="index.html" class="nav__link">Logout</a>
+        </li>
+        <li class="nav__list">
+            <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+            <a href="profile.html" class="nav__link">
+                <img class="profile-icon" src="images/logo.png" alt="profile-icon">
+            </a>
+        </li>
+    </ul>
+
+    <ul class="nav-lower flex-space-arround">
+        <li class="nav__list">
+            <a href="index.html" class="nav__brand nav__link">Tanvir Express</a>
+        </li>
+        <li class="nav__list">
+            <a href="cart.html" class="nav__link">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                Cart 2 Products -$124.50
+            </a>
+        </li>
+    </ul>
+   </nav>
+   <!-- navbar end here -->
+   <main class="flex-center">
+        <div class="main-content">
+            <section class="product-details flex-center">
+                <div class="product__details-left flex-center">
+                    <img src="images/laptop/laptop-1.png" alt="laptop-1">
+                </div>
+                <div class="product__details-right">
+                    <h3 class="product__name">
+                        Macbook Pro
+                    </h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product__desc">
+                    <strong>Description:</strong> Duo clita aliquyam magna no magna kasd ipsum, ut est kasd tempor stet tempor dolore magna justo ea, lorem accusam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium debitis minima accusamus, dolores sapiente.Takimata stet ipsum tempor clita eirmod dolores, lorem amet consetetur ipsum ipsum amet invidunt elitr et takimata. Est et dolores kasd dolor sit gubergren consetetur.</p>
+                    <p class="product__desc">
+                    Duo clita aliquyam magna no magna kasd ipsum, ut est kasd tempor stet tempor dolore magna justo ea, lorem accusam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium debitis minima accusamus, dolores sapiente.Takimata stet ipsum tempor clita eirmod dolores, lorem amet consetetur ipsum ipsum amet invidunt elitr et takimata. Est et dolores kasd dolor sit gubergren consetetur.</p>
+                    <h4 class="product__category">MacBook Pro</h4>
+                    <h4 class="product__price">Price: $799.00</h4>
+                    <p class="product__rating">Rating: 4.8/5</p>
+                    <button class="btn product__button">Add to cart</button>
+                    <button class="btn product__button">Back to shopping</button>
+                </div>
+            </section>
+        </div>
+   </main>
+<!-- footer start here -->
+<footer class="flex-space-arround">
+    <div class="flex-space-arround">
+        <label for="subscribe">Subscribe to news letter:</label>
+        <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your Email Address">
+        <button class="btn btn-subscribe">Subscribe</button>
+    </div>
+    <div>
+        <p>&copy;Copyright 2023 Tanvir Express. All right reserved</p>
+    </div>
+</footer>
+<!-- footer end here -->
+<script src="script/index.js"></script>
+</body>
+</html>

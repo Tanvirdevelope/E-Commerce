@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making tanvir express">
+    <title>Ecommerce Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- navbar start here -->
+   <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+   <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-arround">
+        <li class="nav__list">
+            <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+            <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+            <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <li class="nav__list">
+            <a href="index.html" class="nav__link">Logout</a>
+        </li>
+        <li class="nav__list">
+            <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+            <a href="profile.html" class="nav__link">
+                <img class="profile-icon" src="images/logo.png" alt="profile-icon">
+            </a>
+        </li>
+    </ul>
+
+    <ul class="nav-lower flex-space-arround">
+        <li class="nav__list">
+            <a href="index.html" class="nav__brand nav__link">Tanvir Express</a>
+        </li>
+        <li class="nav__list">
+            <a href="cart.html" class="nav__link">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                Cart 2 Products -$124.50
+            </a>
+        </li>
+    </ul>
+   </nav>
+   <!-- navbar end here -->
+   <main>
+    <div class="cart flex-center">
+        <div class="cart__items">
+            <div class="cart__items-heading card">
+                <h2>Shopping Cart [2 items]</h2>
+                <div class="cart__items-action">
+                    <label for="select">
+                        <input type="checkbox" name="select" id="select">Select all items
+                    </label>
+                    <button class="btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <button class="btn">Shop More</button>
+                </div>
+            </div>
+
+            <div class="cart__item card flex-space-arround">
+                <input type="checkbox" name="" id="">
+                <img src="images/cart/cart-1.jpg" alt="" class="cart__item-img">
+                <div class="cart__item-description">
+                    <h3 class="product__name">Sony V-4 Headphone</h3>
+                    <h4 class="product__price">Price: $345.50 </h4>
+                    <p class="cart__item-shipping">Free Shipping</p>  
+                </div>
+                <div class="cart__item-action">
+                    <button class="btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <div>
+                        <button class="btn">
+                            <i class="fas fa-add"></i>
+                        </button>
+                        <span>3</span>
+                        <button class="btn">
+                            <i class="fas fa-minus"></i>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart__item card flex-space-arround">
+                <input type="checkbox" name="" id="">
+                <img src="images/cart/cart-2.jpg" alt="" class="cart__item-img">
+                <div class="cart__item-description">
+                    <h3 class="product__name">AirPod Headphone</h3>
+                    <h4 class="product__price">Price: $499.50 </h4>
+                    <p class="cart__item-shipping">Free Shipping</p>  
+                </div>
+                <div class="cart__item-action">
+                    <button class="btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <div>
+                        <button class="btn">
+                            <i class="fas fa-add"></i>
+                        </button>
+                        <span>5</span>
+                        <button class="btn">
+                            <i class="fas fa-minus"></i>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__payment">
+           <div class="cart__payment-summary card">
+             <h2>payment Summary</h2>
+             <div>
+                <p>Subtotal:</p>
+                <p>$345.45</p>
+               </div>
+               <div>
+                <p>Shipping cost:</p>
+                <p>$255.45</p>
+               </div>
+               <div>
+                <p>Total cost:</p>
+                <p>$600.90</p>
+               </div>
+               <button class="btn cart__payment-button">
+                Pay Now
+               </button>
+           </div> 
+           <div class="cart__payment-methods card">
+            <h2>Payment Methods</h2>
+             <div>
+            <i class="fa-brands fa-cc-visa fa-3x"></i>
+            <i class="fa-brands fa-cc-apple-pay fa-3x"></i> 
+            <i class="fa-brands fa-cc-amex fa-3x"></i> 
+            <i class="fa-brands fa-cc-amazon-pay fa-3x"></i> 
+            <i class="fa-brands fa-cc-paypal fa-3x"></i>
+            </div>
+           </div>
+
+        </div>
+    </div>
+   </main>
+<!-- footer start here -->
+<footer class="flex-space-arround">
+    <div class="flex-space-arround">
+        <label for="subscribe">Subscribe to news letter:</label>
+        <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your Email Address">
+        <button class="btn btn-subscribe">Subscribe</button>
+    </div>
+    <div>
+        <p>&copy;Copyright 2023 Tanvir Express. All right reserved</p>
+    </div>
+</footer>
+<!-- footer end here -->
+<script src="script/index.js"></script>
+</body>
+</html>
