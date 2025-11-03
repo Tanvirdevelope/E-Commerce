@@ -171,14 +171,10 @@ nav{
     height: 100%;
     flex-direction: column;
 }
-.banner__title{
-    font-size: 3rem;
-    color: #fff;
-    padding: 0.75rem 1.25rem;
-    border-radius: var(--border-radius);
-    background: rgba(0,0,0,0.25);
-    border: 1px solid rgba(255,255,255,0.15);
-}
+.hero__title{ font-size: 3rem; color:#fff; }
+.hero__subtitle{ color:#e5e7eb; margin-top: 0.5rem; }
+.hero__cta{ display:flex; gap: 0.75rem; margin-top: 1rem; }
+.banner__title{ display:none; }
 .features{
     width: 100%;
     gap: 1rem;
@@ -290,6 +286,8 @@ main{
 .learn-more:hover{
     text-decoration: underline;
 }
+.btn--secondary{ background: transparent; color:#fff; border:1px solid rgba(255,255,255,0.7); }
+.btn--secondary:hover{ background: rgba(255,255,255,0.15); color:#fff; }
 /* product section end here */
 /* pagintaion start here */
 
@@ -466,6 +464,7 @@ footer{
     font-size: 1.1rem;
     align-self: flex-start;
 }
+.site-footer{ background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); }
 .btn-subscribe{
     margin-left: -5px;
 }
@@ -478,6 +477,13 @@ footer{
 footer .btn{
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
+.footer__links{ display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:1.5rem; padding: 1.5rem 0; }
+.footer__links h4{ margin-bottom: 0.5rem; }
+.footer__links a{ color: #fff; opacity: 0.9; }
+.footer__links a:hover{ text-decoration: underline; }
+.footer__brand{ display:flex; gap:0.5rem; align-items:center; }
+.footer__bottom{ display:flex; justify-content: space-between; align-items:center; padding: 0.75rem 0; border-top: 1px solid rgba(255,255,255,0.2); }
+.footer__social a{ color:#fff; margin-left: 0.75rem; }
 /* footer end here */
 
 @media (max-width: 992px){

@@ -53,8 +53,13 @@
 
  <!-- header start here -->
 <header class="header">
-    <div class="banner flex-space-arround">
-        <marquee class="banner__title" behavior="" direction="">50% Sales going on</marquee>
+    <div class="banner flex-space-arround container">
+        <h1 class="hero__title">Discover Tech Deals</h1>
+        <p class="hero__subtitle">Save up to 50% on top brands, limited-time offers.</p>
+        <div class="hero__cta">
+            <a href="#products" class="btn">Shop Now</a>
+            <a href="product.html" class="btn btn--secondary">View Details</a>
+        </div>
         <div class="features flex-space-arround">
             <article class="feature flex-center">
                 <i class="fa-solid fa-truck feature__icon"></i>
@@ -192,7 +197,7 @@
         </section>
 
         <!-- product section start here -->
-        <section class="products">
+        <section class="products" id="products">
             <article class="product card">
                 <div class="badge">
                     <span>5 In stock</span>
@@ -212,7 +217,7 @@
                     <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium debitis minima accusamus, dolores sapiente.... <a href="product.html" class="learn-more">Learn more</a></p>
                     <h4 class="product__price">$899.00</h4>
                     <p class="product__rating">Rating: 4.8/5</p>
-                    <button class="btn product__button">Add to cart</button>
+                    <a class="btn product__button" href="cart.html">Add to cart</a>
 
                 </div>
             </article>
@@ -236,7 +241,7 @@
                     <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium debitis minima accusamus, dolores sapiente.... <a href="product.html" class="learn-more">Learn more</a></p>
                     <h4 class="product__price">$399.00</h4>
                     <p class="product__rating">Rating: 4.5/5</p>
-                    <button class="btn product__button">Add to cart</button>
+                    <a class="btn product__button" href="cart.html">Add to cart</a>
 
                 </div>
             </article>
@@ -260,7 +265,7 @@
                     <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium debitis minima accusamus, dolores sapiente.... <a href="product.html" class="learn-more">Learn more</a></p>
                     <h4 class="product__price">$499.00</h4>
                     <p class="product__rating">Rating: 4.7/5</p>
-                    <button class="btn product__button">Add to cart</button>
+                    <a class="btn product__button" href="cart.html">Add to cart</a>
 
                 </div>
             </article>
@@ -284,7 +289,7 @@
                     <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium debitis minima accusamus, dolores sapiente.... <a href="product.html" class="learn-more">Learn more</a></p>
                     <h4 class="product__price">$345.00</h4>
                     <p class="product__rating">Rating: 4.8/5</p>
-                    <button class="btn product__button">Add to cart</button>
+                    <a class="btn product__button" href="cart.html">Add to cart</a>
 
                 </div>
             </article>
@@ -308,7 +313,7 @@
                     <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium debitis minima accusamus, dolores sapiente.... <a href="product.html" class="learn-more">Learn more</a></p>
                     <h4 class="product__price">$799.00</h4>
                     <p class="product__rating">Rating: 4.9/5</p>
-                    <button class="btn product__button">Add to cart</button>
+                    <a class="btn product__button" href="cart.html">Add to cart</a>
 
                 </div>
             </article>
@@ -332,7 +337,7 @@
                     <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium debitis minima accusamus, dolores sapiente.... <a href="product.html" class="learn-more">Learn more</a></p>
                     <h4 class="product__price">$899.00</h4>
                     <p class="product__rating">Rating: 4.8/5</p>
-                    <button class="btn product__button">Add to cart</button>
+                    <a class="btn product__button" href="cart.html">Add to cart</a>
 
                 </div>
             </article>
@@ -363,14 +368,49 @@
 <!-- main end here -->
 
 <!-- footer start here -->
-<footer class="flex-space-arround">
+<footer class="flex-space-arround site-footer">
     <div class="container flex-space-arround">
         <label for="subscribe">Subscribe to news letter:</label>
         <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your Email Address">
         <button class="btn btn-subscribe">Subscribe</button>
     </div>
-    <div>
+    <div class="container footer__links">
+        <div class="footer__brand">
+            <img src="images/logo.png" alt="Tanvir Express" style="width:40px;height:auto;">
+            <p>Tanvir Express — your trusted tech marketplace.</p>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer__bottom">
         <p>&copy;Copyright 2023 Tanvir Express. All right reserved</p>
+        <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
     </div>
 </footer>
 <!-- footer end here -->
