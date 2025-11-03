@@ -52,12 +52,35 @@
     </ul>
    </nav>
    <!-- navbar end here -->
-   <main>
-    <h2>Contact page</h2>
+  <main>
+   <div class="container">
+    <section class="register">
+        <h2 class="section-title text-center">Contact Us</h2>
+        <div class="card">
+            <form action="" class="form">
+                <div class="form-control flex-center">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" required autocomplete="name">
+                </div>
+                <div class="form-control flex-center">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" required autocomplete="email">
+                </div>
+                <div class="form-control flex-center">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message"></textarea>
+                </div>
+                <div class="form-control flex-center form-btn-field">
+                    <button class="btn contact-btn">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+   </div>
    </main>
 <!-- footer start here -->
 <footer class="flex-space-arround">
-    <div class="flex-space-arround">
+    <div class="container flex-space-arround">
         <label for="subscribe">Subscribe to news letter:</label>
         <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your Email Address">
         <button class="btn btn-subscribe">Subscribe</button>
